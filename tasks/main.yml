@@ -1,6 +1,6 @@
-- name: Update
-  apt:
+- name: update cache
     update_cache: yes
-    upgrade: dist
-    cache_valid_time: 3600
 
+- name: Upgrade
+  apt:
+    upgrade: dist
